@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script type="text/javascript" src="http://js.nicedit.com/nicEdit-latest.js"></script>
+
+    <title>HackaJUS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#" class="pje">
+                        PJE
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Dados inicias</a>
+                </li>
+                <li>
+                    <a href="#">Assuntos</a>
+                </li>
+                <li>
+                    <a href="#">Partes</a>
+                </li>
+                <li>
+                    <a href="#">Características</a>
+                </li>
+                <li>
+                    <a href="#">Incluir petições e documentos</a>
+                </li>
+                <li>
+                    <a href="#">Processos</a>
+                </li>
+                <img class="imgTJ" src="tj.png">
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <h1>Incluir petições e documentos</h1>
+                <div id="sample"> 
+                <textarea name="area" id="area" style="width:70%;height:200px;">
+                    EXCELENTÍSSIMO SENHOR JUIZ DE DIREITO DA _____ VARA DE FAMÍLIA CIRCUNSCRIÇÃO JUDICIÁRIA DE XXXXXXX
+XXXXXX, menor impúbere, nascido (a) em XXXXX, neste ato representado (a) por seu (ua) genitor (a) XXXXXX, brasileiro (a), estado civil, profissão, RG nº XXXXX - SSP/XX, inscrita no CPF nº XXXXX, com endereço XXXXX telefones: (XX) XXXXX, vem à presença de Vossa Excelência, por intermédio de seu (ua) advogado (a) e bastante procurador (a) com fundamento no artigo 1.566, IV, do Código Civil e artigo 2º da Lei nº. 5.478/68
+
+                </textarea>
+                <label>
+                     <span>Anexar arquivo:</span>
+                     <input type="file" name="arquivo" size="16" />
+                </label>
+                <br>
+                <select>
+                    <option>Competência</option>
+                    <option>Juizado Especial da Fazenda</option>
+                    <option>Juizado da Infância e Juventude</option>
+                </select>
+                </br>
+                </div>
+                <br>
+                <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">&larr; &rarr;</a>
+                </br>
+                <br><a href="enviar.html" class="btn btn-secondary" id="menu-toggle">Enviar</a></br>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+    <script type="text/javascript" src="nicEdit-latest.js"></script>
+    <script type="text/javascript">
+//<![CDATA[
+  bkLib.onDomLoaded(function() {
+        new nicEditor({maxHeight : 200}).panelInstance('area');
+        new nicEditor({fullPanel : true,maxHeight : 200}).panelInstance('area1');
+  });
+  //]]>
+    </script>
+
+</body>
+
+</html>

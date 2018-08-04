@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script type="text/javascript" src="http://js.nicedit.com/nicEdit-latest.js"></script>
+
+    <title>HackaJUS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#" class="pje">
+                        PJE
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Dados inicias</a>
+                </li>
+                <li>
+                    <a href="#">Assuntos</a>
+                </li>
+                <li>
+                    <a href="#">Partes</a>
+                </li>
+                <li>
+                    <a href="#">Características</a>
+                </li>
+                <li>
+                    <a href="index.html">Incluir petições e documentos</a>
+                </li>
+                <li>
+                    <a href="#">Processos</a>
+                </li>
+                <img class="imgTJ" src="tj.png">
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div id="sample">
+                <img src="logopequenasinapse_ed.jpg"> 
+                <div class="alert alert-warning" role="alert">
+                  <h4 class="alert-heading">Atenção!</h4>
+                    <p>Reconhecemos algumas palavras chaves que são referentes a processos que vão para o Juizado da Infância e Juventude.</p>
+                  <p class="mb-0">Tem certeza que desejar encaminhar para o Juizado Especial da Fazenda?</p>
+                </div>
+                <select>
+                    <option>Competência</option>
+                    <option>Juizado Especial da Fazenda</option>
+                    <option>Juizado da Infância e Juventude</option>
+                </select>
+                </div>
+                <br>
+                <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">&larr; &rarr;</a>
+                </br>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+    <script type="text/javascript" src="nicEdit-latest.js"></script>
+    <script type="text/javascript">
+//<![CDATA[
+  bkLib.onDomLoaded(function() {
+        new nicEditor({maxHeight : 200}).panelInstance('area');
+        new nicEditor({fullPanel : true,maxHeight : 200}).panelInstance('area1');
+  });
+  //]]>
+    </script>
+
+</body>
+
+</html>
